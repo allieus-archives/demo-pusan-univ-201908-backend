@@ -10,3 +10,12 @@ class Professor(models.Model):
                              ])
     email = models.EmailField(blank=True)
     department_name = models.CharField(max_length=100, blank=True)
+
+    def as_dict(self):
+        return {
+            'pk': self.pk,
+            'name': self.name,
+            'phone': self.phone,
+            'email': self.email,
+            'department_name': self.department_name,
+        }

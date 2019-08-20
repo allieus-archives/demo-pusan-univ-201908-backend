@@ -6,4 +6,5 @@ app_name = 'univ'
 
 urlpatterns = [
     path('professor/', views.professor_list),
+    path('professor.json', views.professor_list_json),
 ]
