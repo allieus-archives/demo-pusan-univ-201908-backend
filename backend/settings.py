@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'univ',  # univ 장고앱을 현재 프로젝트에 등록
 ]
 
 MIDDLEWARE = [
