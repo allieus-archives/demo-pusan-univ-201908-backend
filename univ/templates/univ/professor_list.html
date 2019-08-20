@@ -1,0 +1,17 @@
+
+<h2>Professor List</h2>
+
+<ul>
+    {% for professor in professor_list %}
+        <li>
+            {{ professor.name }}
+            {{ professor.phone }}
+            {% if professor.email %}
+                <a href="mailto:{{ professor.email }}">
+                    {{ professor.email }}
+                </a>
+            {% endif %}
+            {{ professor.department_name }}
+        </li>
+    {% endfor %}
+</ul>
