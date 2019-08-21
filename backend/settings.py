@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'webpack_loader',
     'univ',  # univ 장고앱을 현재 프로젝트에 등록
 ]
 
